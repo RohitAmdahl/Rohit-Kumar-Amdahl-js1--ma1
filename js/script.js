@@ -20,10 +20,31 @@ heading.style.fontSize= "2em";
 
 //Question 4
 
-const heading = document.querySelector("h3")
-console.log(heading.className);
+const subheading = document.querySelector("h3")
+console.log(subheading.className);
 
-heading.className = "subheading";
+subheading.className = "subheading";
 
-console.log(heading.className);
+console.log(subheading.className);
 
+//Question 5
+
+const paragraphs = document.querySelectorAll("p");
+
+for (i = 0; i < paragraphs.length; i++) {
+
+  console.log(paragraphs [i]);
+  
+  //paragraphs.style.color = "red";
+
+}
+
+//Question 6
+
+const resultsContainer = document.querySelector(".results")
+
+console.log(resultsContainer.innerHTML);
+
+resultsContainer .innerHTML +=`<p>New paragraph</p>`;
+
+console.log(resultsContainer.innerHTML);
