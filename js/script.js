@@ -51,8 +51,6 @@ console.log(resultsContainer.innerHTML);
 
 //question 7
 
-
-
 const cats = [
   {
       name: "Blob",
@@ -67,12 +65,16 @@ const cats = [
   }
 ];
 
+console.log(cats);
 
-function animal(){
 
-for (let i = 0 ;  i <cats.length;  i++){
+function animal(list){
 
-}
-};
+  for(let i = 0 ; i <cats.length ; i++){
 
-console.log([0].age);
+    let list = name[i];
+    
+  console.log(cats);
+    }
+  };
+
