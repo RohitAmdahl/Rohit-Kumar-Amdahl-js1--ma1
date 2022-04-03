@@ -18,6 +18,7 @@ heading .innerHTML =  "Updated heading";
 heading.style.fontSize= "2em";
 
 
+
 //Question 4
 
 const subheading = document.querySelector("h3")
@@ -72,9 +73,50 @@ function animal(list){
 
   for(let i = 0 ; i <cats.length ; i++){
 
-    let list = name[i];
-    
-  console.log(cats);
+    console.log(cats[i].name);
     }
   };
 
+  animal(cats)
+
+
+  //Question 8
+  const cats = [
+    {
+        name: "Blob",
+        age: 10
+    },
+    {
+        name: "Harold",
+    },
+    {
+        name: "Blurt",
+        age: 21
+    }
+  ];
+
+  function createCats(cats) {
+      
+      let catNames = "";
+      
+      for(let i = 0; i < cats.length; i++) {
+          // console.log(items[i]);
+          
+          catNames = catNames + "<p>" + items[i] + "</p>";
+          // console.log(listItems);
+      }
+      
+      const catHtml = "<p>" + catNames + "</p>";
+      
+      // console.log(finalHtml);
+      
+      return catHtml;
+      
+  }
+  
+  const catHtml = createList(colours);
+  
+  console.log(catHtml);
+  
+  const container = document.querySelector("cat-container");
+  container.innerHTML = newHtml;
